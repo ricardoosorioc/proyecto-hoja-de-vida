@@ -14,8 +14,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ progress, textLeft, textRight
   return (
     <div className="relative flex flex-col justify-center py-1">
         <div className="flex flex-row w-auto justify-between">
-            <span className=' text-sm'>{textLeft}</span>
-            <span className=' text-sm '>{textRight}</span>
+            <span className=' text-sm text-slate-500'>{textLeft}</span>
+            <span className=' text-sm text-slate-500 '>{textRight}</span>
         </div>
       <div className="bg-gray-300 h-1 w-56">
         <div className=" bg-amber-600 h-full " style={progressStyle}></div>

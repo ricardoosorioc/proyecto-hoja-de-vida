@@ -5,19 +5,33 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogActions from '@mui/material/DialogActions';
+import { makeStyles } from '@mui/styles';
+import 'tailwindcss/tailwind.css';
 
 interface DialogHireMeProps {
     isOpen: boolean;
     handleClose: () => void;
   }
 
+  const useStyles = makeStyles((theme) => ({
+    customDialog: {
+      backgroundColor: 'orange', // Cambia el color de fondo a "lightblue" o tu color personalizado
+    },
+  }));
 
 const DialogHireMe: React.FC<DialogHireMeProps> = ({ isOpen, handleClose }) => {
-  return (
-    <Dialog open={isOpen} onClose={handleClose}>
-      <DialogTitle className=' text-2xl'>Tomó la desición correcta!</DialogTitle>
+  
+    const classes = useStyles();
+
+    return (
+        <Dialog
+      open={isOpen}
+      onClose={handleClose}
+      classes={{ paper: classes.customDialog }} // Aplica las clases personalizadas al diálogo
+    >
+      <DialogTitle className=' text-2xl text-center font-bold'>Tomó la desición correcta!</DialogTitle>
       <DialogContent>
-        <DialogContentText>
+        <DialogContentText className=' font-semibold text-center'>
           Gracias por depositarme su confianza, sientase libre de contactarme por cualquier medio que disponga.
           Espero que podamos lograr cosas grandiosas juntos. No se arrepentirá.
         </DialogContentText>

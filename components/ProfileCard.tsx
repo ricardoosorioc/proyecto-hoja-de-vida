@@ -5,7 +5,7 @@ const ProfileCard = () => {
     <div className="relative text-center">
       <div className="relative inline-block">
         <img
-        src="/portada.jpg"
+        src="/images/portada.jpg"
         alt="Imagen de perfil"
         className="w-36 h-36 rounded-full mx-auto mb-4"
         />
