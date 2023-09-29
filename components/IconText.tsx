@@ -15,4 +15,4 @@ const IconText:React.FC<IconTextProps> = ({ text }) => {
   );
 }
 
-export default IconText;
+export {IconText};

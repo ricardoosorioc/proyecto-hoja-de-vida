@@ -1,17 +1,18 @@
 
-import { ButtonHireMe } from "@/components/ButtonHireMe";
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { FaCoffee, FaBeer } from 'react-icons/fa';
+
+
 import { ImFacebook} from 'react-icons/im';
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'; // Importa los íconos que desees
 import { ButtonIcon } from "@/components/ButtonIcon";
 import { ProfileCard } from "@/components/ProfileCard";
 import { ContactData } from "@/components/ContactData";
 import { ProgressBar } from "@/components/ProgressBar";
-import IconText from "@/components/IconText";
+import {IconText} from "@/components/IconText";
+import { PresentationPanel } from "@/components/PresentationPanel";
 
 const Home =() =>{
+  
   return (
   <div className=' bg-slate-200 h-full flex '>
     <aside className="debug bg-white w-96 flex flex-col" >
@@ -52,9 +53,9 @@ const Home =() =>{
       </div>
     </aside>
     <main className="debug w-screen">
-      <section>
+      <section className=" debug bg-white h-96 mx-9">
         <div>
-          <ButtonHireMe></ButtonHireMe>
+          <PresentationPanel/>
        
         </div>
       </section>
