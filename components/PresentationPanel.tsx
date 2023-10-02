@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { ButtonHireMe } from './ButtonHireMe';
-import { DialogHireMe } from './DialogHireMe';
+import { DialogMain } from './DialogMain';
 
 const PresentationPanel = () => {
   const [openDialog, setOpenDialog] = useState(false);
@@ -19,10 +19,11 @@ const PresentationPanel = () => {
         <p className=" text-5xl text-amber-600 font-bold mb-7">Ingeniero de Sistemas</p>
         <p className=" font-light text-slate-500 mb-7 text-base">Soy un estudiante universitario apasionado por la Ingeniería de Sistemas, <br></br> próximo a graduarme con una sólida formación técnica y habilidades interpersonales.<br></br> Mi enfoque se ha centrado en el desarrollo de soluciones tecnológicas prácticas, la gestión de proyectos <br></br> y la resolución de problemas en el ámbito de la tecnología de la información.</p>
         <ButtonHireMe onClick={handleOpenDialog}/>
-        <DialogHireMe isOpen={openDialog} handleClose={handleCloseDialog} />
+        <DialogMain isOpen={openDialog} handleClose={handleCloseDialog} text1='Tomó la desición correcta!' text2='Gracias por depositarme su confianza, sientase libre de contactarme por cualquier medio que disponga.
+          Espero que podamos lograr cosas grandiosas juntos. No se arrepentirá.' />
       </div>
-      <div className='flex items-center mx-12'>
-        <img src="/images/portada.jpg" alt="Imagen" className=" w-80 h-full" />
+      <div className='flex items-center mr-12'>
+        <img src="/images/portada.jpg" alt="Imagen" className=" w-80 h-96" />
 
       </div>
       

@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineArrowRight } from 'react-icons/ai'; // Importa el ícono que desees
-import Button from '@mui/material/Button';
+
 
 interface ButtonHireMeProps {
   onClick: () => void; // Función para manejar el clic en el botón

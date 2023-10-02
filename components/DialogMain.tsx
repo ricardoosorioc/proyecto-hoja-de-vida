@@ -8,9 +8,11 @@ import DialogActions from '@mui/material/DialogActions';
 import { makeStyles } from '@mui/styles';
 import 'tailwindcss/tailwind.css';
 
-interface DialogHireMeProps {
+interface DialogMainProps {
     isOpen: boolean;
     handleClose: () => void;
+    text1: string;
+    text2: string;
   }
 
   const useStyles = makeStyles((theme) => ({
@@ -19,7 +21,7 @@ interface DialogHireMeProps {
     },
   }));
 
-const DialogHireMe: React.FC<DialogHireMeProps> = ({ isOpen, handleClose }) => {
+const DialogMain: React.FC<DialogMainProps> = ({ isOpen, handleClose, text1, text2 }) => {
   
     const classes = useStyles();
 
@@ -29,11 +31,10 @@ const DialogHireMe: React.FC<DialogHireMeProps> = ({ isOpen, handleClose }) => {
       onClose={handleClose}
       classes={{ paper: classes.customDialog }} // Aplica las clases personalizadas al diálogo
     >
-      <DialogTitle className=' text-2xl text-center font-bold'>Tomó la desición correcta!</DialogTitle>
+      <DialogTitle className=' text-2xl text-center font-bold'>{text1}</DialogTitle>
       <DialogContent>
         <DialogContentText className=' font-semibold text-center'>
-          Gracias por depositarme su confianza, sientase libre de contactarme por cualquier medio que disponga.
-          Espero que podamos lograr cosas grandiosas juntos. No se arrepentirá.
+          {text2}
         </DialogContentText>
       </DialogContent>
       <DialogActions>
@@ -45,4 +46,4 @@ const DialogHireMe: React.FC<DialogHireMeProps> = ({ isOpen, handleClose }) => {
   );
 }
 
-export {DialogHireMe}
+export {DialogMain}
