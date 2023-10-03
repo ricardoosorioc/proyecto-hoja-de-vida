@@ -121,7 +121,7 @@ const Home = () => {
               textoInferiorDerecho="Ene 2004 - Dic 2014"
               textoSuperiorDerecho="Educación Básica"
               textoDebajoUno="En esta institución ubicada en el municipio de La Unión, oriente Antioqueño, curse toda la educación básica, 
-          desde la primaria hasta obtener el titulo de bachiller."
+            desde la primaria hasta obtener el titulo de bachiller."
             />
             <div className="gray-line"></div>
             <EducationCard
@@ -130,15 +130,15 @@ const Home = () => {
               textoInferiorDerecho="Ene 2018 - Hasta la fecha"
               textoSuperiorDerecho="Educación Superior"
               textoDebajoUno="En esta Universidad, estoy cursando la carrera Ingenieria de Sistemas, en la cual,
-          en el presente, estoy cursando el septimo semestre. Al finalizar la carrera tendré el titulo que me 
-          acreditará como Ingeniero de Sistemas"
+              en el presente, estoy cursando el septimo semestre. Al finalizar la carrera tendré el titulo que me 
+              acreditará como Ingeniero de Sistemas"
             />
           </div>
         </section>
         <HeaderMain
           text1="Portafolio"
           text2="A continuación voy a mostrar algunos de los proyectos que he realizado o
-      en los que he participado hasta la fecha hasta la fecha:"
+          en los que he participado hasta la fecha hasta la fecha:"
         />
 
         <section className="flex flex-col overflow-x-auto">
@@ -156,7 +156,7 @@ const Home = () => {
               textoInferior="IA que predice si que un cliente será moroso con su tarjeta de crédito en el futuro"
               textoDialogoSuperior="En curso"
               textoDialogoInferior='¿Cómo saben los emisores de tarjetas que devolveremos lo que cobramos? La predicción del incumplimiento crediticio es fundamental para gestionar el riesgo en un negocio de préstamos al consumo. La predicción del incumplimiento crediticio permite a los prestamistas optimizar las decisiones crediticias, lo que conduce a una mejor experiencia del cliente y a una economía empresarial sólida.
-          Este proyecto actualmente esta en la fase de entrenamiento de la IA. Si desea, puede visitarlo: "https://github.com/ricardoosorioc/Proyecto_American_Express-Default_Prediction.git"'
+              Este proyecto actualmente esta en la fase de entrenamiento de la IA. Si desea, puede visitarlo: "https://github.com/ricardoosorioc/Proyecto_American_Express-Default_Prediction.git"'
             />
             <PortfolioCard
               imagenSrc="/images/code-factory.jpg"
@@ -165,7 +165,8 @@ const Home = () => {
               textoDialogoSuperior="En proceso"
               textoDialogoInferior="El principal objetivo del SSMU es enlazar la solicitud que hace un usuario de un servicio de transporte
           con un conductor de un vehículo que acepta suplir la solicitud. Así se ofrece una nueva modalidad de
-          transporte público innovadora respecto a los servicios tradicionales de taxis de las grandes ciudades. Este es un proyecto que ocupa varias asignaturas de la carrera Ingeniería de Sistemas de la UdeA"
+          transporte público innovadora respecto a los servicios tradicionales de taxis de las grandes ciudades. Este es un proyecto que ocupa varias asignaturas de la carrera Ingeniería de Sistemas de la UdeA.
+           Link: https://github.com/CodeF-ctory2023 "
             />
             <PortfolioCard
               imagenSrc="/images/Asterisk.jpg"
@@ -173,16 +174,14 @@ const Home = () => {
               textoInferior="Proyecto para cifrar llamadas telefónicas con Asterisk"
               textoDialogoSuperior="Completo"
               textoDialogoInferior='En las comunicaciones VoIP, es importante garantizar la seguridad y privacidad de las conversaciones. Para lograrlo, se utilizan técnicas de cifrado que protegen la confidencialidad de los datos transmitidos. 
-          Para el desarrollo de este proyecto veremos la manera en la que podemos aprovisionar de seguridad y cifrado las llamadas realizadas entre extensiones IP. Puede ver la documentación en el siguiente link: "https://docs.google.com/document/d/1lkQleyS9b3XMP
-          qH9H7Y62aETx77hS8RbgSYsGsMf8Kw/edit?usp=sharing"'
+          Para el desarrollo de este proyecto veremos la manera en la que podemos aprovisionar de seguridad y cifrado las llamadas realizadas entre extensiones IP. Puede ver la documentación en el siguiente link: "https://docs.google.com/document/d/1lkQleyS9b3XMPqH9H7Y62aETx77hS8RbgSYsGsMf8Kw/edit?usp=drive_link"'
             />
             <PortfolioCard
               imagenSrc="/images/android.jpg"
               textoSuperior="Aplicación de Cine"
               textoInferior="Proyecto que busca simular una app de un Cinema en Android"
               textoDialogoSuperior="Ruta en busqueda"
-              textoDialogoInferior='El proyecto fue terminado, pero actualmente desconozco su ubicación. Puede observar los mockups de la app en el siguiente enlace: "https://drive.google.com/file/d/1uDhs
-          2nA_4GGg5DzvaFstqrtVSxKqtLdb/view?usp=sharing"'
+              textoDialogoInferior='El proyecto fue terminado, pero actualmente desconozco su ubicación. Puede observar los mockups de la app en el siguiente enlace: "https://drive.google.com/file/d/1uDhs2nA_4GGg5DzvaFstqrtVSxKqtLdb/view?usp=drive_link"'
             />
           </div>
         </section>

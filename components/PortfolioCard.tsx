@@ -26,8 +26,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       setOpenDialog(false);
     };  
   return (
-    <div className="bg-white flex-col items-center rounded-lg shadow-md mx-4 py-4 w-80 h-96">
-        <div className="bg-white flex-col items-center rounded-lg shadow-md min-w-full">
+    <div className="bg-white flex-col items-center shadow-md mx-4 mb-4 py-4 w-80 h-96">
+        <div className="bg-white flex-col items-center shadow-md min-w-full">
         {/* Imagen */}
         <img src={imagenSrc} alt="Imagen de la tarjeta" className="w-full h-60" />
 
@@ -39,7 +39,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
         {/* Botón */}
         <button
-            className=" text-amber-600 py-2 px-4 rounded mt-3 hover:bg-blue-600"
+            className=" text-amber-600 py-2 px-4 rounded mt-3 hover:scale-125 "
             onClick={handleOpenDialog}
         >
             Saber Mas +
