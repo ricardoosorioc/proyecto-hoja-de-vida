@@ -169,7 +169,7 @@ const Home = () => {
            Link: https://github.com/CodeF-ctory2023 "
             />
             <PortfolioCard
-              imagenSrc="/images/Asterisk.jpg"
+              imagenSrc="/images/asterisk.jpg"
               textoSuperior="Llamadas Seguras en Asterisk"
               textoInferior="Proyecto para cifrar llamadas telefónicas con Asterisk"
               textoDialogoSuperior="Completo"
