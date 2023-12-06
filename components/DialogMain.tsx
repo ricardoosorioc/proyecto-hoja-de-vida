@@ -13,6 +13,9 @@ interface DialogMainProps {
     handleClose: () => void;
     text1: string;
     text2: string;
+    textbutton: string;
+    externalLink: string; // Nueva prop para el enlace externo
+
   }
 
   const useStyles = makeStyles((theme) => ({
@@ -21,9 +24,13 @@ interface DialogMainProps {
     },
   }));
 
-const DialogMain: React.FC<DialogMainProps> = ({ isOpen, handleClose, text1, text2 }) => {
+const DialogMain: React.FC<DialogMainProps> = ({ isOpen, handleClose, text1, text2, textbutton, externalLink }) => {
   
     const classes = useStyles();
+
+    const handleRedirectToExternalLink = () => {
+      window.open(externalLink, '_blank');
+    };
 
     return (
         <Dialog
@@ -38,6 +45,9 @@ const DialogMain: React.FC<DialogMainProps> = ({ isOpen, handleClose, text1, tex
         </DialogContentText>
       </DialogContent>
       <DialogActions>
+        <Button onClick={handleRedirectToExternalLink} color="secondary">
+          {textbutton}
+        </Button>
         <Button onClick={handleClose} color="primary">
           Cerrar
         </Button>

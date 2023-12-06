@@ -7,6 +7,8 @@ interface PortfolioCardProps {
     textoInferior: string;
     textoDialogoSuperior: string;
     textoDialogoInferior: string;
+    textoBoton: string;
+    linkGithub: string;
   }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
@@ -15,6 +17,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   textoInferior,
   textoDialogoSuperior,
   textoDialogoInferior,
+  textoBoton,
+  linkGithub
 }) => {
     const [openDialog, setOpenDialog] = useState(false);
 
@@ -26,7 +30,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       setOpenDialog(false);
     };  
   return (
-    <div className="bg-white flex-col items-center shadow-md mx-4 mb-4 py-4 w-80 h-96">
+    <div className="bg-white flex-col items-center shadow-md mx-4 mb-4 py-4 w-80 h-96 transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg">
         <div className="bg-white flex-col items-center shadow-md min-w-full">
         {/* Imagen */}
         <img src={imagenSrc} alt="Imagen de la tarjeta" className="w-full h-60" />
@@ -44,7 +48,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         >
             Saber Mas +
         </button>
-        <DialogMain isOpen={openDialog} handleClose={handleCloseDialog} text1={textoDialogoSuperior} text2={textoDialogoInferior} />
+        <DialogMain isOpen={openDialog} handleClose={handleCloseDialog} text1={textoDialogoSuperior} text2={textoDialogoInferior} textbutton={textoBoton} externalLink={linkGithub} />
 
         </div>
     </div>
