@@ -19,7 +19,7 @@ interface DialogHireMeProps {
 
 const useStyles = makeStyles((theme) => ({
   customDialog: {
-    backgroundColor: 'orange',
+    backgroundColor: '#6BCAE2',
   },
 }));
 

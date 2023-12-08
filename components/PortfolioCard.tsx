@@ -33,7 +33,10 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     <div className="bg-white flex-col items-center shadow-md mx-4 mb-4 py-4 w-80 h-96 transform transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-lg">
         <div className="bg-white flex-col items-center shadow-md min-w-full">
         {/* Imagen */}
-        <img src={imagenSrc} alt="Imagen de la tarjeta" className="w-full h-60" />
+        <div className='flex justify-center'>
+          <img src={imagenSrc} alt="Imagen de la tarjeta" className=" w-auto h-60" />
+        </div>
+        
 
         {/* Texto Superior */}
         <p className="text-lg font-semibold mt-2 px-4">{textoSuperior}</p>

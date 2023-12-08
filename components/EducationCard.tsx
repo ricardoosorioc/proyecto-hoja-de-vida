@@ -12,12 +12,12 @@ interface EducationCardProps{
 
 const EducationCard: React.FC<EducationCardProps> = ({textoSuperiorIzuierdo,textoInferiorIzquierdo,textoInferiorDerecho,textoSuperiorDerecho,textoDebajoUno}) => {
   return (
-    <div className="flex justify-between bg-white pt-12 pb-3 pl-9 pr-7 mx-8">
+    <div className="flex flex-row justify-center bg-white pt-2 pb-3 pl-9 pr-7 mx-8">
       {/* Sección Izquierda */}
-      <div className="w-2/5 p-4">
+      <div className=" w-1/4 p-4">
         <div className="mb-4">
           {/* Texto superior */}
-          <p className="text-lg font-semibold">{textoSuperiorIzuierdo}</p>
+          <p className=" text-xl font-semibold">{textoSuperiorIzuierdo}</p>
         </div>
         <div className="flex ">
           {/* Textos inferiores */}
@@ -27,7 +27,7 @@ const EducationCard: React.FC<EducationCardProps> = ({textoSuperiorIzuierdo,text
       </div>
 
       {/* Sección Derecha */}
-      <div className="w-3/5 p-4">
+      <div className="w-3/4 p-4">
         {/* Texto subrayado */}
         <p className="text-lg font-semibold">{textoSuperiorDerecho}</p>
 

@@ -9,7 +9,7 @@ interface ContactDataProps {
 
 const ContactData: React.FC<ContactDataProps> = ({ leftText, rightText, rightTextColor }) => {
   return (
-    <div className="flex flex-row w-auto justify-between">
+    <div className="flex flex-row w-full lg:w-auto justify-between">
       <span className=' text-sm'>{leftText}</span>
       <span className={` text-sm bg-${rightTextColor}`}>{rightText}</span>
     </div>

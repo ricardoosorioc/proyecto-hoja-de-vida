@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfileCard = () => {
   return (
-    <div className="relative text-center">
+    <div className="relative text-center w-full lg:w-auto">
       <div className="relative inline-block">
         <img
         src="/images/perfil.jpg"

@@ -20,7 +20,7 @@ interface DialogMainProps {
 
   const useStyles = makeStyles((theme) => ({
     customDialog: {
-      backgroundColor: 'orange', // Cambia el color de fondo a "lightblue" o tu color personalizado
+      backgroundColor: '#6BCAE2', // Cambia el color de fondo a "lightblue" o tu color personalizado
     },
   }));
 

@@ -12,6 +12,7 @@ import { KnowledgeCard } from "@/components/KnowlwdgeCard";
 import { EducationCard } from "@/components/EducationCard";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import Head from "next/head";
+import { MobileMenu } from "@/components/MobileMenu";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       <Head>
         <title>Hoja de Vida</title>
       </Head>
-      <aside className=" bg-white w-72 flex flex-col h-screen fixed top-0 left-0">
+      <aside className=" bg-white w-full lg:w-72 flex flex-col h-screen fixed top-0 left-0">
         <div className=" my-12">
           <ProfileCard />
         </div>
@@ -109,7 +110,7 @@ const Home = () => {
         <section className="flex flex-col">
           <HeaderMain
             text1="Educación"
-            text2="A continuación voy a detallar mi historia educativa hasta la fecha:"
+            text2=""
           />
           <div className=" bg-white flex-col  mx-8">
             <div className="gray-line"></div>
@@ -145,7 +146,7 @@ const Home = () => {
             <PortfolioCard
               imagenSrc="/images/AExpress.jpg"
               textoSuperior="American Express - Predicción"
-              textoInferior="IA que predice si que un cliente será moroso con su tarjeta de crédito en el futuro"
+              textoInferior="IA que predice si que un cliente será moroso con su tarjeta de crédito."
               textoDialogoSuperior="En curso"
               textoDialogoInferior="¿Cómo saben los emisores de tarjetas que devolveremos lo que cobramos? La predicción del incumplimiento crediticio es fundamental para gestionar el riesgo en un negocio de préstamos al consumo. La predicción del incumplimiento crediticio permite a los prestamistas optimizar las decisiones crediticias, lo que conduce a una mejor experiencia del cliente y a una economía empresarial sólida.
               Este proyecto actualmente esta en la fase de entrenamiento de la IA."
@@ -155,7 +156,7 @@ const Home = () => {
             <PortfolioCard
               imagenSrc="/images/code-factory.jpg"
               textoSuperior="Code Factory"
-              textoInferior="Proyecto que busca hacer un Sistema de Servicios de Movilidad Urbana"
+              textoInferior="Proyecto que busca hacer un Sistema de Servicios de Movilidad Urbana."
               textoDialogoSuperior="Finalizado"
               textoDialogoInferior="El principal objetivo del SSMU es enlazar la solicitud que hace un usuario de un servicio de transporte
               con un conductor de un vehículo que acepta suplir la solicitud. Así se ofrece una nueva modalidad de
@@ -166,29 +167,28 @@ const Home = () => {
             <PortfolioCard
               imagenSrc="/images/asterisk.jpg"
               textoSuperior="Llamadas Seguras en Asterisk"
-              textoInferior="Proyecto para cifrar llamadas telefónicas con Asterisk"
+              textoInferior="Proyecto para cifrar llamadas telefónicas con Asterisk."
               textoDialogoSuperior="Completo"
-              textoDialogoInferior='En las comunicaciones VoIP, es importante garantizar la seguridad y privacidad de las conversaciones. Para lograrlo, se utilizan técnicas de cifrado que protegen la confidencialidad de los datos transmitidos. 
-              Para el desarrollo de este proyecto veremos la manera en la que podemos aprovisionar de seguridad y cifrado las llamadas realizadas entre extensiones IP.'
+              textoDialogoInferior="En las comunicaciones VoIP, es importante garantizar la seguridad y privacidad de las conversaciones. Para lograrlo, se utilizan técnicas de cifrado que protegen la confidencialidad de los datos transmitidos. 
+              Para el desarrollo de este proyecto veremos la manera en la que podemos aprovisionar de seguridad y cifrado las llamadas realizadas entre extensiones IP."
               textoBoton="Ir a la documentación"
               linkGithub="https://docs.google.com/document/d/1lkQleyS9b3XMPqH9H7Y62aETx77hS8RbgSYsGsMf8Kw/edit?usp=drive_link"
             />
             <PortfolioCard
               imagenSrc="/images/Mercado-Libre.jpg"
               textoSuperior="Clon de Mercado Libre"
-              textoInferior="Este es un clon del front de Mercado Libre en HTML y CSS"
+              textoInferior="Este es un clon del front de Mercado Libre en HTML y CSS."
               textoDialogoSuperior="Solo el front"
-              textoDialogoInferior='Este front es estático y no tiene funcionalidades aun, pero en el futuro se conectara con un back.'
+              textoDialogoInferior="Este front es estático y no tiene funcionalidades aun, pero en el futuro se conectara con un back."
               textoBoton="Ir a Github"
               linkGithub="https://github.com/ricardoosorioc/MercadoLibreClon.git"
-
             />
             <PortfolioCard
               imagenSrc="/images/android.jpg"
               textoSuperior="Aplicación de Cine"
-              textoInferior="Proyecto que busca simular una app de un Cinema en Android"
+              textoInferior="Proyecto que busca simular una app de un Cinema en Android."
               textoDialogoSuperior="Finalizado"
-              textoDialogoInferior='Puede observarlo en el github.'
+              textoDialogoInferior="Puede observarlo en el github."
               textoBoton="Ir a Github"
               linkGithub="https://github.com/ricardoosorioc/CinemaPreview.git"
             />
@@ -212,6 +212,7 @@ const Home = () => {
           />
         </div>
       </aside>
+      <MobileMenu />
     </div>
   );
 };

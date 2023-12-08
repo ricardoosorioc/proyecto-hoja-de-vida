@@ -17,6 +17,7 @@ const ButtonHireMe : React.FC<ButtonHireMeProps> =({onClick})=>{
             <span className=" mx-2">{icon}</span>
             
       </div>
+      <span className="sparkle-effect absolute"></span>
     </button>;
 }
 export {ButtonHireMe} ;
